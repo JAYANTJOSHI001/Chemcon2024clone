@@ -1,15 +1,18 @@
-function hide(){
+function hide(){ 
   let x = document.querySelectorAll(".section");
-  for (let element of x) {
-    if (element.style.display === "none") {
-      element.style.display = "block";
-    } 
-    else {
-      element.style.display = "none";
-    }    
+  let y=document.querySelector("#navi");
+  if (y.classList=="fa-solid fa-bars") {
+    y.classList="fa-solid fa-xmark";
+    for (let element of x) {
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      }
+    }
   }
-}
-
-function myFunction(x) {
-  x.classList.toggle("fa-xmark");
+  else {
+    y.classList="fa-solid fa-bars";
+    for (let element of x) {
+      element.style.display = "none";
+    }
+  }
 }

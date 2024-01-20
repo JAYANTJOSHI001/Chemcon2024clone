@@ -59,6 +59,15 @@ i{
     justify-content: space-around;
 }
 
+.navblocks{
+    padding: 5px;
+    font-size: 12px;
+}
+
+.navblocks:hover{
+    background-color: #ef7d48;
+    border-radius: 10px;
+}
 
 .navbase{
     background-color: #f9ccae;
